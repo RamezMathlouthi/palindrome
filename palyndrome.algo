@@ -1,0 +1,24 @@
+ALGORITHM palindrome
+FUNCTION palynd(ch:STRING) : BOOLEAN /* Déclaration d'une fonction palyndrome de Input String et de type boolean càd vraie ou faux*/
+VAR
+    n,i:INTEGER                      /*Déclaration de  n qui est la longueur de la chaine*/
+    pal:BOOLEAN                       /*Déclaration de pal qui est de type boeelien càd vraie ou faux*/
+BEGIN
+    n <--longueur(ch);
+    pal<--true;                       /*initialisation du palyndrome avec true*/
+    i=0;                              /*initialisation du compteur à 0 */
+    
+    
+ IF (n==0 || n==1) THEN       */ Condition Base Case: /*
+  pal=true;                 
+      ELSE{                         /*si nn /* 
+          for (var i = 0; i < n/2; i++) {     */pour i=0 jusqu'à la longueur de la chaine sur 2 en incrémentation/*
+          if (str[i] !== str[n - 1 - i]) {      */Si str(i) est strictement différent de str(n-1-i)/*
+          return false;                         */ result sera fausse/*
+    }
+  }
+  return true;
+ }
+ }
+ END
+
